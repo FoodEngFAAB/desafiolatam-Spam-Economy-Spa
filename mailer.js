@@ -8,8 +8,8 @@ const { default: axios } = require('axios')
 
 let transporter = nodemailer.createTransport({
     service: 'gmail', auth: {
-        user: '',   //AQUÍ SE DEBE INGRESAR UN CORREO ELECTRÓNICO Y REPETIRLO EN LA LÍNEA 47
-        pass: '',   //INGRESAR PASSWORD DEL CORREO ELECTRÓNICO INDICADO ANTERIORMENTE
+        user: '',   //AQUÍ SE DEBE INGRESAR UN CORREO ELECTRÓNICO Y REPETIRLO EN LA LÍNEA 47.
+        pass: '',   //INGRESAR PASSWORD DEL CORREO ELECTRÓNICO INDICADO ANTERIORMENTE.
     },
 })
 
@@ -44,7 +44,7 @@ const enviar = (correos, asunto, contenido) => {
         <br>`
         //Características del envío
         let mailOptions = {
-            from: '',   //INGRESAR EMAIL DE LA LÍNEA 11
+            from: '',   //INGRESAR EMAIL DE LA LÍNEA 11.
             to: correos,
             subject: asunto,
             html: contenido + template
